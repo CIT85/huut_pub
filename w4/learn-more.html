@@ -15,74 +15,94 @@
         <h1>Learn More</h1>
     </header>
     <nav>
+        <header>
+            <h2>Navigation Menu</h2>
+        </header>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="goals.html">My Goals</a></li>
             <li><a href="learn-more.html">Learn More</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
         </ul>
     </nav>
+
     <main>
-        <h2>Exploring New HTML Tags</h2>
-        <p>Here are three HTML tags that I want to know more about:</p>
+        <article>
+            <h2 class="outline-text">Outline</h2>
+            <div class="image-container">
+                <img src="img/learn-more-outline.png" alt="Image Description" class="outlined-image">
+            </div>
+        </article>
 
-        <ol>
-            <li>
-                <dl>
-                    <dt>
-                        &lt;iframe&gt;
-                    </dt>
-                    <dd>
-                        <p>
-                            <em> This element represents a nested browsing context, embedding another HTML page into the
-                                current
-                                one.</em>
+        <article>
+            <h2>Exploring New HTML Tags</h2>
+            <p>Here are three HTML tags that I want to know more about:</p>
 
-                        </p>
-                        <p>
-                            Because each browsing context is a complete document environment, every &lt;iframe&gt; in a
+            <ol>
+                <li>
+                    <section>
+                        <h3>&lt;iframe&gt;</h3>
+                        <p><em>This element represents a nested browsing context, embedding another HTML page into the
+                                current one.</em></p>
+                        <p>Because each browsing context is a complete document environment, every &lt;iframe&gt; in a
                             page requires increased memory and other computing resources. <strong><a
                                     href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe"
-                                    target="_blank">Learn more about &lt;iframe&gt;</a>.</strong>
-                        </p>
-                    </dd>
-                </dl>
-            </li>
-            <li>
-                <dl>
-                    <dt>
-                        &lt;option&gt;
-                    </dt>
-                    <dd>
-                        <p>
-                            <em> This element is used to define an item contained in a &lt;select&gt;, an
-                                &lt;optgroup&gt;, or a &lt;datalist&gt; element.</em>
-
-                        </p>
+                                    target="_blank">Learn more about &lt;iframe&gt;</a>.</strong></p>
+                    </section>
+                </li>
+                <li>
+                    <section>
+                        <h3>&lt;option&gt;</h3>
+                        <p><em>This element is used to define an item contained in a &lt;select&gt;, an
+                                &lt;optgroup&gt;, or a &lt;datalist&gt; element.</em></p>
                         <p><strong><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option"
-                                    target="_blank">Learn more about &lt;option&gt;</a>.</strong>
-                        </p>
-                    </dd>
-                </dl>
-            </li>
-            <li>
-                <dl>
-                    <dt>
-                        &lt;table&gt;
-                    </dt>
-                    <dd>
-                        <p>
-                            <em> This element represents tabular data — that is, information presented in a
-                                two-dimensional table comprised of rows and columns of cells containing data.</em>
+                                    target="_blank">Learn more about &lt;option&gt;</a>.</strong></p>
+                    </section>
+                </li>
+                <li>
+                    <section>
+                        <h3>&lt;table&gt;</h3>
+                        <p><em>This element represents tabular data — that is, information presented in a
+                                two-dimensional table comprised of rows and columns of cells containing data.</em></p>
+                        <p><strong><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table"
+                                    target="_blank">Learn more about &lt;table&gt;</a>.</strong></p>
+                    </section>
+                </li>
+            </ol>
+        </article>
 
-                        </p>
-                        <p>
-                            <strong><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table"
-                                    target="_blank">Learn more about &lt;table&gt;</a>.</strong>
-                        </p>
-                    </dd>
-                </dl>
-            </li>
-        </ol>
+        <article>
+            <h2>Learning CIT85 Progress</h2>
+            <p>Here are the learning outcome of HTML and CSS from CIT85</p>
+            <section class="learn-progress">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Week</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>W1</td>
+                            <td>Basic HTML syntax: h1, h2, h3, h4, h5, body, meta, link</td>
+                        </tr>
+                        <tr>
+                            <td>W2</td>
+                            <td>Images, Figure, Caption, Lazy Loading</td>
+                        </tr>
+                        <tr>
+                            <td>W3</td>
+                            <td>Semantic Tags: header, body, footer, nav, section, etc., Table, Form</td>
+                        </tr>
+                        <tr>
+                            <td>W4</td>
+                            <td>Styling HTML: box model, text declaration</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
     </main>
     <!-- Footer -->
     <footer>
