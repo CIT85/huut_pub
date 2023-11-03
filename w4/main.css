@@ -1,29 +1,54 @@
-/* main.css */
-
 /* Global Styles */
 html {
   font-size: 16px;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #fffffc;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
+nav h2 {
+  color: #fff;
+}
 a {
   text-decoration: none;
-  color: #0077cc;
 }
 
 a:visited {
-  color: #000000;
+  color: #001011;
 }
 
 a:hover {
   text-decoration: underline;
-  color: rgb(159, 229, 234);
+  color: #6ccff6;
+}
+
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Hover state for the button */
+a.button:hover {
+  background-color: #2684d2;
+  color: #fff;
+}
+
+/* Active (clicked) state for the button */
+a.button:active {
+  background-color: #1c6ea4;
+  color: #fff;
 }
 
 /* Header Styles */
@@ -58,7 +83,7 @@ main {
 
 /* Section Styles */
 section {
-  background-color: #fff;
+  background-color: #f5f5f1;
   padding: 20px;
   margin: 15px 0;
   border-radius: 5px;
@@ -68,27 +93,23 @@ section {
 /* Footer Styles */
 footer {
   background-color: #444;
-  color: #fff;
+  color: #fffffc;
   text-align: center;
   padding: 10px;
 }
 
-/* Links Styles */
 ul a {
   color: #0077cc;
 }
 
-/* List Item Styles */
 ul li {
   margin-bottom: 10px;
 }
 
-/* Ordered List Styles */
 ol {
   list-style: decimal;
 }
 
-/* Images Styles */
 img {
   max-width: 100%;
   height: auto;
@@ -111,11 +132,6 @@ img {
   margin: 0 auto;
 }
 
-body {
-  position: relative;
-}
-
-/* Style for the "Back to Top" link */
 /* Style for the "Back to Top" link */
 .back-to-top {
   position: fixed;
@@ -163,4 +179,54 @@ th {
 
 .learn-progress {
   margin-left: 40px;
+}
+
+div {
+  display: block;
+}
+.margin {
+  background-color: #3498db;
+  border: 2px solid #2980b9;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+/* Style the inner container */
+.border {
+  background-color: #001011;
+  border: 2px solid #001011;
+  padding: 20px;
+  margin: 20px;
+}
+
+.padding {
+  background-color: #fffffc;
+  border: 2px solid #fffffc;
+  padding: 20px;
+  margin: 20px;
+}
+
+.content {
+  background-color: #7c7c7c;
+  border: 2px solid #7c7c7c;
+  padding: 20px;
+  margin: 20px;
+}
+
+main section form {
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form elements as needed */
+form label,
+form input,
+form textarea,
+form select {
+  margin-bottom: 10px;
+  padding-left: 5px;
 }
