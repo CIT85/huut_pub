@@ -1124,6 +1124,15 @@ h1.outline,
   .project-details p {
     font-size: 1rem;
   }
+
+  .contact {
+    padding-top: 45rem;
+    padding-bottom: 22rem;
+}
+
+  .container-contact {
+      width: 80%;
+  }
 }
 
 /* iPads, Tablets */
@@ -1178,6 +1187,15 @@ h1.outline,
   .portfolio {
     padding-top: 10rem;
   }
+
+  .contact {
+    padding-top: 32rem;
+    padding-bottom: 20rem;
+  }
+
+  .container-contact {
+    width: 70%;
+  }
 }
 
 /* Small screens, laptops */
@@ -1216,6 +1234,15 @@ h1.outline,
 
   .project img {
     width: 500px;
+  }
+
+  .contact {
+    padding-top: 28rem;
+    padding-bottom: 20rem;
+  }
+
+  .container-contact {
+    width: 70%;
   }
 }
 
