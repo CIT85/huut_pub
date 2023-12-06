@@ -1,0 +1,1176 @@
+/* --- RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+figcaption {
+  opacity: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0px auto;
+  display: table;
+}
+/* --- NAVBAR --- */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #07374a;
+  z-index: 1000;
+}
+
+/* with this rule set, it is flex container and horizontally arrange children items: h1 and ul with space between them. */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+/* With the applied flexbox to navbar-container, the menu-items will be aligned to the right */
+.menu-items {
+  list-style-type: none;
+  padding-left: 0.5rem;
+  text-align: right;
+  margin: 0;
+}
+
+.menu-items li {
+  list-style: none;
+  padding: 1rem;
+  display: inline-block;
+  margin-inline: 0.5rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #f0f0e6;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+
+.menu-items a:hover {
+  border-bottom: 2px solid #f0f0e6;
+}
+
+.menu-items a:active {
+  border-bottom: 2px solid #f0f0e6;
+}
+
+/* With the applied flexbox to navbar-container, the navbar-brand will be aligned to the left */
+.navbar-brand {
+  display: inline-block;
+  color: #f0f0e6;
+  font-weight: 400;
+}
+
+/* --- SECTION: ABOUT ME --- */
+.about-me {
+  background-color: #25b79f;
+  padding: 8rem 0 2rem 0;
+}
+
+.about-me .about-heading {
+  color: #07374a;
+  font-size: 2.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.about-content img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  color: #f0f0e6;
+  padding: 0 2.3rem;
+  text-align: center;
+}
+
+.about-content .left-content {
+  text-align: center;
+}
+
+/* --- SECTION: WHAT I"M DOING ---*/
+
+.service {
+  background-color: #07374a;
+  padding: 3rem 0;
+  color: #f0f0e6;
+}
+
+.service-heading {
+  color: #25b79f;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+/* replaced the float and percentage-based widths with a grid layout for the .container*/
+
+.container-service {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2%;
+}
+
+/* changed the flex container (service-exp) to have a column direction. This allows the content to stack vertically. */
+
+.service-exp {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 30px 0;
+  background: #25b79f;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.service-content {
+  margin-left: 10px;
+}
+
+.service-content h2 {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.service-content p {
+  font-size: 15px;
+}
+
+.service-icon-box {
+  margin-top: 5px;
+  margin-bottom: 0;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-icon-box img {
+  max-width: 100%;
+}
+
+/* --- TECHNOLOGY APPLIED --- */
+
+.technology {
+  background: #25b79f;
+  padding: 1rem 0 2rem 0;
+}
+
+/* removed the float and percentage-based widths for the .testimonial elements and replaced them with a grid layout for the .container. Now, the testimonials will be laid out in a grid with three columns. */
+
+.container-technology {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1%;
+}
+
+.testimonial {
+  margin-top: 50px;
+  padding-bottom: 2rem;
+}
+
+.testimonial-content {
+  background: #07374a;
+  width: 100%;
+  padding: 0px 20px 20px 20px;
+  font-size: 16px;
+  line-height: 28px;
+  position: relative;
+  text-align: center;
+  color: #cfcfcf;
+}
+
+.testimonial i {
+  color: #ffbf35;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.testimonial-img {
+  position: relative;
+  top: -35px;
+}
+
+.testimonial-img img {
+  width: 80px;
+  height: 80px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.sub-about-me {
+  background-color: #25b79f;
+  padding: 6rem 0 2rem 0;
+}
+
+.sub-about-me-skill {
+  background-color: #25b79f;
+  padding: 2rem 0 2rem 0;
+}
+
+.main-section {
+  background-color: #25b79f;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.width-50 {
+  flex: 0 0 50%;
+  box-sizing: border-box;
+}
+
+.sub-about {
+  padding: 20px;
+}
+
+.sub-about-me .sub-about-heading,
+.sub-about-me-skill .sub-about-skill {
+  color: #07374a;
+  font-size: 2.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.sub-about-me .sub-about-heading {
+  padding-bottom: 2rem;
+}
+
+.sub-about-img {
+  width: 100%;
+  max-width: 100%;
+  height: 60%;
+  margin-top: 20px;
+}
+
+.sub-about p {
+  font-size: 16px;
+  margin-top: 15px;
+  line-height: 27px;
+}
+
+.mt-1rem {
+  margin-top: 1rem;
+}
+
+table {
+  width: 100%;
+}
+
+table th,
+table td {
+  font-size: 16px;
+  text-align: left;
+  padding: 5px 0;
+}
+
+/* --- SKILLS BAR SECTION --- */
+
+.skills-bar {
+  padding: 25px 30px;
+}
+
+.skills-bar .bar {
+  margin: 25px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+  color: #f0f0e6;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+/*Represents the actual progress line for each skill. It's absolutely positioned within the progress-line container, and its width is animated using keyframes.*/
+.bar .progress-line span {
+  position: absolute;
+  background: #07374a;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+/*Defines an animation called "animate" that gradually increases the scaleX property from 0 to 1, making the progress line appear to grow horizontally.*/
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line .html {
+  width: 80%;
+}
+.progress-line .css {
+  width: 70%;
+}
+.progress-line .bootstrap {
+  width: 50%;
+}
+.progress-line .javascript {
+  width: 20%;
+}
+
+/*Creates a triangular shape before the progress line. It's used for the small arrow-like indicator at the top of the progress line.*/
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -12px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #f0f0f0;
+}
+/*Sets the content of the ::after pseudo-elements to display the percentage of completion for each skill.*/
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #07374a;
+  font-size: 12px;
+  font-weight: 700;
+  background: #f0f0f0;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+.progress-line .html::after {
+  content: "80%";
+}
+.progress-line .css::after {
+  content: "70%";
+}
+.progress-line .bootstrap::after {
+  content: "50%";
+}
+.progress-line .javascript::after {
+  content: "20%";
+}
+
+/* --- SECTION: RESUME --- */
+
+/*removed the float and percentage-based widths for .edu-exp, .experience-list, and .color-list. The .container-resume now utilizes the grid layout with two columns.*/
+
+.resume {
+  background-color: #25b79f;
+  padding: 6rem 0 0 0;
+  color: #f0f0e6;
+  text-align: center;
+}
+
+.resume .resume-heading {
+  color: #07374a;
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+.container-resume {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2%;
+}
+
+/* adjusted the width of .edu-exp to 100% to make it take the full width within the grid.*/
+.edu-exp {
+  padding: 10px;
+  margin: 1%;
+  text-align: center;
+}
+
+.experience-list,
+.color-list {
+  width: 100%;
+  padding: 30px 10px;
+  background: #07374a;
+  margin-bottom: 20px;
+}
+
+.heading-text {
+  padding-bottom: 30px;
+}
+
+/*removed float: left; from .experience-content and .color-content to allow them to take the full width within the grid.*/
+.experience-content,
+.color-content {
+  width: 100%;
+}
+
+.experience-content h2 {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.experience-content h3 {
+  color: #f0f0e6;
+  font-weight: 500;
+  margin-bottom: 2px;
+  font-size: 17px;
+}
+
+.experience-content p {
+  font-size: 15px;
+}
+
+/* --- SECTION: PORTFOLIO --- */
+
+/* Replaced the .proj-1, .proj-2, and .more-work styles to use flexbox and adjusted the container styles accordingly. 
+
+Combined the common styles for .proj-1 and .proj-2 into a shared .proj-details class to reduce redundancy.*/
+/* General Styles */
+.portfolio {
+  background: #25b79f;
+  padding: 6rem 0 2rem 0;
+  color: #f0f0e6;
+  text-align: center;
+}
+
+.proj-heading {
+  text-align: center;
+  color: #07374a;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project img {
+  height: 250px;
+  width: 380px;
+  border-radius: 50%;
+  box-shadow: 0 20px 10px -10px rgb(37 41 52 / 31%);
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.project-details {
+  width: 100%;
+}
+
+.project-details h2 {
+  font-size: 2rem;
+  color: #07374a;
+}
+
+.project-details p {
+  font-size: 1.3rem;
+  color: #07374a;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.buttons button {
+  background: #f0f0e6;
+  padding: 0.5rem;
+  width: 120px;
+  border: none;
+  border-bottom: 2px solid #07374a;
+}
+
+.buttons button a {
+  text-decoration: none;
+  color: #07374a;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.buttons button:hover {
+  background: #07374a;
+}
+
+.buttons button:hover a {
+  color: #f0f0e6;
+}
+
+.more-work {
+  text-align: center;
+  margin: 3rem 0 1rem 0;
+}
+
+.more-work p {
+  font-size: 20px;
+  color: #07374a;
+  font-weight: 500;
+}
+
+.more-work a {
+  text-decoration: none;
+  color: #f0f0e6;
+  font-size: 20px;
+}
+
+.more-work a:hover {
+  border-bottom: 2px solid #f0f0e6;
+}
+
+/* --- CONTACT Page --- */
+
+.contact {
+  background: #25b79f;
+  height: 86.2vh;
+}
+
+.contact-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contact-content h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #07374a;
+  padding-bottom: 0.5rem;
+}
+
+.contact-content .mail {
+  color: #f0f0e6;
+  padding-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.contact-content .links {
+  color: #07374a;
+  padding: 0.5rem;
+  padding-bottom: 1.8rem;
+  font-size: 1rem;
+}
+
+.contact-content a {
+  text-decoration: none;
+  color: #07374a;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-content a:hover {
+  color: #f0f0e6;
+}
+
+/* --- SITE MAP page --- */
+/* Main color palette section */
+.color-palette {
+  padding: 6rem 0;
+}
+
+/* Flex container for the color palette content */
+.contact-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Color list items */
+.color-list {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Color content */
+.color-content {
+  padding: 4rem;
+}
+
+/* --- BLOG --- */
+
+.blog {
+  background-color: #25b79f;
+  padding: 6rem 0 2rem 0;
+}
+
+.blog .blog-heading {
+  color: #07374a;
+  font-size: 2.3rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 2rem 0 4rem 0;
+}
+
+li {
+  list-style: none;
+}
+
+.blog-posts {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/*Displays the blog posts in a grid layout with one fraction unit column.
+Adds a gap of 20 pixels between grid items.*/
+.blog-posts-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.blog-post-item > a {
+  position: relative;
+  height: 100%;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.blog-post-item > a::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: #07374a;
+  z-index: -1;
+}
+
+/*Styles the container for the blog banner image, setting its width, height, border-radius, and overflow properties.*/
+.blog-banner-box {
+  width: 100%;
+  height: 200px;
+  border-radius: 2%;
+  overflow: hidden;
+}
+
+/*Styles the blog banner image inside the container with width, height, and object-fit properties.*/
+.blog-banner-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Applies a scale transformation to the blog banner image when the anchor tag is hovered.*/
+.blog-post-item > a:hover .blog-banner-box img {
+  transform: scale(1.1);
+}
+
+.blog-content {
+  padding: 15px;
+  color: #f0f0e6;
+}
+
+.blog-item-title {
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.blog-post-item > a:hover .blog-item-title {
+  color: #25b79f;
+}
+
+.blog-text {
+  color: #f0f0e6;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* --- FOOTER --- */
+footer {
+  height: auto;
+  text-align: center;
+  background-color: #07374a;
+  color: #f0f0e6;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+}
+
+h1.outline,
+.outline {
+  display: none;
+}
+
+/* --- SUBPAGE: RESTAURANT PAGE FROM PROJECTS ---*/
+/* Navigation */
+
+.res-nav {
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+  position: sticky;
+  top: 0;
+  margin-bottom: 25px;
+  background: white;
+  padding: 5px 20px;
+  z-index: 50;
+  background-color: #fff0db;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-to-proj {
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
+  background: #ffc066;
+}
+
+.back-to-proj:hover {
+  background: #f0f0e6;
+  color: black;
+}
+
+.res-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.bar_icon {
+  font-size: 28px;
+}
+
+/* Restaurant Welcome Section */
+.res-welcome {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+}
+.res-welcome-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tag {
+  background-color: #149f39;
+  padding: 5px 10px;
+  color: white;
+  align-self: flex-start;
+}
+
+.res-welcome-content h1 {
+  font-size: 68px;
+  line-height: 1;
+  font-weight: 400;
+}
+.explore_btn {
+  background: #ffc066;
+  align-self: flex-start;
+}
+
+/* Features Section */
+.features {
+  margin-top: 100px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.feature {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.feature img {
+  width: 72px;
+}
+.feature:hover {
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+}
+.divider {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+/* Menu Section */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 50px 0;
+  align-items: center;
+}
+.menu .tag {
+  align-self: center;
+}
+
+.grid-image {
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+.grid-image:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+.grid {
+  padding: 0 2rem;
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7";
+}
+
+.item1 {
+  grid-area: I1;
+}
+.item2 {
+  grid-area: I2;
+}
+.item3 {
+  grid-area: I3;
+}
+.item4 {
+  grid-area: I4;
+}
+.item5 {
+  grid-area: I5;
+}
+.item6 {
+  grid-area: I6;
+}
+.item7 {
+  grid-area: I7;
+}
+
+/* Footer Section */
+.res-footer {
+  background-color: #fff0db;
+  color: black;
+}
+
+.footer_container {
+  padding: 30px;
+  display: flex;
+  text-align: center;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+    display: table;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .navbar-brand {
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .menu-items {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .menu-items li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .about-me {
+    padding: 25rem 0 2rem 0;
+  }
+
+  .about-content img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .about-content p {
+    padding: 0 1.5rem;
+  }
+
+  .service {
+    padding: 2rem 0;
+  }
+
+  .container-service {
+    grid-template-columns: 1fr;
+  }
+
+  .service-exp {
+    margin-bottom: 20px;
+  }
+
+  .sub-about-me {
+    padding: 25rem 0 2rem 0;
+  }
+
+  .sub-about-me-skill {
+    padding: 2rem 0 2rem 0;
+  }
+
+  .sub-about-img {
+    height: auto;
+  }
+
+  .sub-about p {
+    font-size: 14px;
+  }
+
+  .container-subpage {
+    flex-direction: column;
+  }
+
+  .width-50 {
+    flex: 0 0 100%;
+  }
+
+  .bar .progress-line span::before {
+    display: none;
+  }
+
+  .container-resume {
+    grid-template-columns: 1fr;
+  }
+
+  .resume {
+    padding: 25rem 0 2rem 0;
+  }
+
+  .blog {
+    padding: 25rem 0 2rem 0;
+  }
+
+  .portfolio {
+    padding-top: 25rem;
+  }
+
+  .project img {
+    width: 250px;
+  }
+  .project-details h2 {
+    font-size: 1.7rem;
+  }
+
+  .project-details p {
+    font-size: 1rem;
+  }
+}
+
+/* iPads, Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .navbar-container {
+    height: auto;
+  }
+
+  .menu-items {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .menu-items li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .about-me {
+    padding: 9rem 0 2rem 0;
+  }
+
+  .about-content img {
+    height: 140px;
+    width: 140px;
+  }
+
+  .sub-about-me {
+    padding: 9rem 0 2rem 0;
+  }
+
+  .sub-about-img {
+    height: 50%;
+  }
+
+  .sub-about p {
+    font-size: 16px;
+  }
+
+  .container-resume {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .resume {
+    padding: 10rem 0 2rem 0;
+  }
+
+  .blog {
+    padding: 10rem 0 2rem 0;
+  }
+
+  .portfolio {
+    padding-top: 10rem;
+  }
+}
+
+/* Small screens, laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .navbar-container {
+    height: auto;
+  }
+
+  .service {
+    padding: 3rem 0;
+  }
+
+  .container-service {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sub-about-me {
+    padding: 2rem 0 2rem 0;
+  }
+
+  .sub-about-img {
+    height: 70%;
+  }
+
+  /* Styles for Small screens and laptops of RESUME */
+  .container-resume {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .resume {
+    padding: 6rem 0 2rem 0;
+  }
+
+  .portfolio {
+    padding-top: 6rem;
+  }
+
+  .project img {
+    width: 500px;
+  }
+}
+
+/* Desktops, large screens */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .container-resume {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project img {
+    width: 600px;
+  }
+}
+
+/* Extra large screens, TV */
+@media only screen and (min-width: 1201px) {
+}
+
+/* Media Queries for subpage*/
+@media (max-width: 786px) {
+  .res-welcome {
+    flex-direction: column;
+  }
+
+  .res-welcome-image {
+    display: flex;
+    justify-content: center;
+  }
+  .res-welcome-image img {
+    width: 80%;
+  }
+  .res-welcome-content {
+    gap: 10px;
+    padding: 0 20px;
+  }
+  .res-welcome-content h1 {
+    font-size: 32px;
+  }
+  .features {
+    flex-direction: column;
+  }
+  .feature {
+    flex-direction: column;
+  }
+  .grid {
+    padding: 10px;
+  }
+  .grid-image {
+    border-radius: 0px;
+  }
+  .footer_container {
+    flex-direction: column;
+  }
+}
